@@ -85,6 +85,7 @@ Alguns trechos do material não funcionavam como estavam escritos e foram ajusta
 - A página de edição e a de detalhes chamam `/api/dashboard/produtos/{id}`. O material usava `/api/produtos/{id}`, uma rota que não é criada.
 - O botão "Novo Produto" aponta para `/dashboard/novo`, onde a página é criada.
 - A vitrine monta a URL do fetch com `NEXT_PUBLIC_SELF_URL`, porque um Server Component não aceita URL relativa.
+- O bloco `prefers-color-scheme: dark` do `globals.css` gerado pelo `create-next-app` foi removido. Com o sistema em modo escuro, ele deixava o fundo preto e os textos quase brancos sobre os cartões brancos.
 
 ## Em andamento
 
